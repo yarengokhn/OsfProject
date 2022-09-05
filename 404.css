@@ -1,0 +1,129 @@
+
+#main{
+    margin-left: 15%;
+    margin-top: 8%;
+    border: 1px solid rgb(219, 207, 207);
+    padding: 10px;
+    box-shadow: 3px 5px #d6d5d5;
+    justify-content: center;
+  }
+#main-0{
+    width:60%;
+}
+
+#main-0 h1{
+float:left;
+    font-size: 100px;
+    color:green;
+    margin-left: 10%;
+    margin-top:10%;
+    align-items: center;
+
+}
+
+
+
+body{
+    margin: 0;
+    padding:0;
+    display:flex;
+	background-color: white;
+}
+
+#main-content {
+	float: right;
+	max-width: 45%;
+	color: black;
+	font-weight: 300;
+	font-size: 18px;
+	padding-bottom: 40px;
+	line-height: 28px;
+}
+
+#main-content h1 {
+	margin: 0px;
+	font-weight: 400;
+	font-size: 42px;
+	margin-bottom: 40px;
+	line-height: normal;
+}
+#main-content a{
+  color:green;
+}
+
+
+#search { margin-top: 30px; }
+#search h1{
+  padding-bottom:0px;
+}
+
+#search input[type='text'] {
+	width: 90%;
+	height: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+    border:2px solid black;
+	-moz-box-sizing: border-box;
+	background-color: white;
+	border: 1px solid black;
+	outline: none;
+	-webkit-appearance: none;
+	font-size: 16px;
+	font-weight: 300;
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	border-radius: 20px;
+}
+
+#search .input-search {
+	width: 10%;
+	float: right;
+	height: 41px;
+	background-color: rgba(0,0,0,0.2);
+	outline: none;
+	border: none;
+	-webkit-appearance: none;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+  
+	font-weight: 300;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	text-align: center;
+}
+
+#search .input-search:hover {
+	background-color: rgba(26,188,156,0.7);
+}
+/* === RESPONSIVE CSS === */
+
+@media all and (max-width: 899px) {
+	#wrap { width: 90%; }
+}
+
+@media all and (max-width: 799px) {
+	#wrap { width: 90%; height: auto; margin-top: 40px; top: 0%; }
+	#wordsearch { width: 90%; float: none; margin:0 auto; }
+	#wordsearch ul li { font-size: 4vw; }
+	#main-content { float: none; width: 90%; max-width: 90%; margin:0 auto; margin-top: 30px; text-align: justify; }
+	#main-content h1 { text-align: left; }
+	#search input[type='text'] { width: 84%; }
+	#search .input-search { width: 15%; }
+}
+
+@media all and (max-width: 499px) {
+	#main-content h1 { font-size: 28px;
+  }
+}
+
+
+
