@@ -17,6 +17,8 @@ body{
 h1{
     font-weight: bold;
     margin-bottom: 20px;
+    margin-top:15px;
+    text-align: center;
 }
 .overlay{
     position:fixed;
@@ -34,9 +36,11 @@ h1{
 .wrapper{
 
     position: relative;
-    width:50%;
+    width:30%;
     min-height: 400px;
     display:flex;
+    border:2px solid none;
+    border-radius:3px ;
 
 
 }
@@ -55,13 +59,13 @@ background: white;
     color:rgb(63, 58, 58);
 }
 .signin{
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
 }
 input{
     border:2px solid rgb(189, 182, 182);
-    border-radius: 3px;
+    border-radius: 20px;
     padding:12px 15px;
     margin:8px 0;
     width:100%;
@@ -77,18 +81,22 @@ input:focus{
 
 }
 a{
-    color:rgb(152, 228, 40) ;
+    color:rgb(137, 204, 37) ;
     text-decoration: none;
     font-size: 14px;
     margin: 10px 0;
-    margin-right: 2px;
 
+  
+
+}
+label{
+    margin-top: 20px;
 }
 h4{
     margin-left: 0;
 }
 .form-submit{
-    background:rgb(152, 228, 40) ;
+    background:rgb(137, 204, 37) ;
     border:none;
     border-radius: 20px;
     color:white;
@@ -98,7 +106,8 @@ h4{
     letter-spacing:1px;
     text-transform: uppercase;
     cursor:pointer;
-    transition: ;
+    margin-left: 10vh;
+    
 
 
 
