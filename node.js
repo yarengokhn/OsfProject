@@ -82,3 +82,22 @@ window.onload = () => {
     checkCookie();
   }, 2000);
 };
+//Buy Now Button functionality
+
+function incrementButton(){
+  var element=document.getElementById("incrementText");
+  var value=element.innerHTML;
+
+  ++value;
+
+  document.getElementById("incrementText").innerHTML=value;
+}
+
+function incrementButtonHeart(){
+  var element=document.getElementById("incrementHeart");
+  var value=element.innerHTML;
+
+  ++value;
+
+  document.getElementById("incrementHeart").innerHTML=value;
+}
