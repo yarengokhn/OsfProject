@@ -1,0 +1,33 @@
+#productdetails{
+    width: 30%;
+}
+
+/*Product*/
+#productdetails .productimg{
+    width: 40%;
+    margin-right: 50px;
+
+   
+}
+.small-img-group{
+    display: flex;
+  justify-content: space-between;
+}
+.small-img-col{
+ 
+    flex-basis:24%;
+    cursor: pointer;
+}
+#dot {
+    height: 25px;
+    width: 25px;
+    background-color: darkgrey;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .button{
+    border-radius: 20px;
+    height:40px;
+    width:150px;
+
+  }
