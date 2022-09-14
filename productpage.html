@@ -8,41 +8,28 @@
     <link rel="stylesheet" href="pp.css">
 </head>
 <body>
-    <section class="header">
-
-    </section>
-    <section id="productdetails" class="section-p1">
-        <div clas="productimg">
-            <img src="pdp-images/productbig.jpg "width="100%" id="MainImg" alt="">
-       
-        <div class="small-img-group">
-            <div class="small-img-col">
-                <img src="pdp-images/product1small.jpg "width="100%" id="Small-img" alt="">
-            </div>
-
-            <div class="small-img-col">
-                <img src="pdp-images/product2small.jpg "width="100%" id="Small-img" alt="">
-            </div>
-
-            <div class="small-img-col">
-                <img src="pdp-images/product3small.jpg "width="100%" id="Small-img" alt="">
-            </div>
-
-            <div class="small-img-col">
-                <img src="pdp-images/product4small.jpg "width="100%" id="Small-img" alt="">
-            </div>
-        </div>
-
-
-    </div>
+    <script src="pp.js"></script>
+   
 
     <div class="prodetail">
         <h1>$299.99</h1>
         
         <select class="button">
-            <option><span id="dot"></span>Dark Grey</option>
-            <option><span id="dot"></span>Green</option>
+            <option>Dark Grey</option>
+            <option>Green</option>
         </select>
+
+        <input type="number" value="1">
+        <button class="addcartbutton">Add to Chart</button>
+        <span>Sed ut perspiciatis unde omnis iste error sit
+            voluptatem accusantium doloremque laudantium,
+            totam rem aperiam,eaque ipsa quae ab illo inven-
+            tore Beatae vitae dicta sunt explicablo.
+            Nemo enim ipsam voluptatem quia voluptas
+
+
+
+        </span>
 
 
 
@@ -51,10 +38,32 @@
    
 
     </section>
+</div>
 
 
     <section class="featured"></section>
     <section class="footer"></section>
+
+
+
+    <div class="product">
+        <div class="product-small-img">
+            <img src="pdp-images/product1small.jpg " onclick="myFunction(this)">
+            <img src="pdp-images/product2small.jpg "onclick="myFunction(this)">
+            <img src="pdp-images/product3small.jpg "onclick="myFunction(this)">
+            <img src="pdp-images/product4small.jpg "onclick="myFunction(this)">
+
+
+
+
+
+        </div>
+        <div class="img-container">
+            <img id="imageBox"src="pdp-images/productbig.jpg ">
+
+        </div>
+        
+    </div>
 
 
 
