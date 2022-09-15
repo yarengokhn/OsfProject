@@ -1,33 +1,428 @@
-#productdetails{
-    width: 30%;
+
+
+body{
+  margin: 0;
+  padding:0;
+  display:flex;
+  flex-direction: column;
+}
+.navbar{
+  height: 60px;
+  width:100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
 }
 
+.megamenu-li {
+  position: static; }
+  .megamenu-li .megamenu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 15px; }
+    .megamenu-li .megamenu li {
+      position: static; }
+
+.main{
+  height:700px;
+  width:100%;
+  background-color: rgb(232, 224, 206);
+}
+
+.logo{ margin-top: 0;}
+.logo img{
+
+  height: 60px;
+
+}
+.icons a{
+ 
+  display:inline-block;
+  padding: 10px 12px;
+  list-style-type: none;
+  color:#ddd;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+background-color: #fff;
+overflow: hidden;
+
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color:#003333	;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  
+  height:100%;
+}
+/* Add an active class to highlight the current page */
+.active {
+  background-color: white;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  
+  text-decoration: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+display:none;
+}
+.dropdown-content ul{
+  display:flex;
+  flex-direction: column;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  list-style: none;
+  text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: black;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display:contents;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+  
+
+*,*:before,*:after{
+  box-sizing:border-box;
+}
+
+
+
+
+
+
+
+footer{
+  display:-webkit-flex;
+  display: -moz-flex;
+  display:-ms-flex;
+  display: -o-flex;
+  display:flex;
+  flex-flow: row wrap;
+  position: relative;
+  
+  width: 100%;
+  
+  padding:50px;
+  color:black;
+  background-color: #fcfcfc;
+}
+.footer > *{
+  flex:1 100%;
+}
+.footer-left{
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+
+}
+.footer-left a{
+  color:black;
+}
+
+h2{
+  color: black;
+  font-weight: 500;
+  font-size: 10px;
+}
+.footer ul{
+  list-style: none;
+  padding-left: 0;
+}
+.footer li{
+  line-height:2em ;
+
+}
+.footer a{
+  text-decoration: none;
+
+}
+.footer-right{
+  display:-webkit-flex;
+  display: -moz-flex;
+  display:-ms-flex;
+  display: -o-flex;
+  display:flex;
+  flex-flow: row wrap;
+}
+.footer-right > *{
+  flex:1 50%;
+  margin-right: 1.25em;
+}
+.box a {
+  color:#999;
+
+}
+
+.footer-left p{
+  padding-right:20%;
+  color:#999;
+
+}
+.socials a {
+  background: #f9f5f5;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 6px;
+}
+.socials a i{
+
+  color:rgb(213, 210, 210);
+  padding:8px 10px;
+  font-size:15px;
+  
+
+}
+a{
+  color: black;
+}
+@media screen and (min-width:600px){
+  .footer-right > *{
+      flex:1;
+  }
+  .footer-left{
+      flex:1 0px;
+  }
+  .footer-right{
+      flex:4 0px;
+
+  }
+}
+@media (max-width:600px){
+  .footer{
+      padding:15px;
+
+  }
+  .main{
+      font-size: 55px;
+  }
+
+}
+/* Product page*/
+
+
+
+.product-small-img img{
+  height:92px;
+  margin:10px 0;
+  cursor:pointer;
+  display: block;
+  opacity:0.6;
+
+}
+.product-small-img img:hover{
+
+  opacity:1 ;
+}
+.product{
+  display: flex;
+  top:50%;
+  left:50%;
+  
+  transform:translate(-50%,-50%);
+  position: absolute;
+  background-color: #fff;
+}
+.img-container img{
+   
+height: 500px;
+
+}
+.product-small-img{
+  
+  float:left;
+}
+.img-container{
+  float: right;
+  padding:20px;
+}
+
+
+
+
+
 /*Product*/
+#productdetails{
+  display:flex;
+  
+
+}
+.productimg{
+  display:flex;
+  margin-top:20px;
+}
+
+
+.icon-shape {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.icon-sm {
+  width: 2rem;
+  height: 2rem;
+  
+}
+
+
+
 #productdetails .productimg{
-    width: 40%;
-    margin-right: 50px;
+    width: 100%;
+    margin-right: 0px;
 
    
 }
-.small-img-group{
-    display: flex;
-  justify-content: space-between;
-}
-.small-img-col{
- 
-    flex-basis:24%;
+
+.small-img-row{
+ padding-left: 30px;
+    flex-basis:10%;
     cursor: pointer;
+
 }
-#dot {
-    height: 25px;
-    width: 25px;
-    background-color: darkgrey;
-    border-radius: 50%;
-    display: inline-block;
-  }
+
+.prodetail{
+     width: 500px;
+     padding:20px;
+     
+
+
+}
+ .prodetail span{
+  line-height: 25px;
+
+
+}
+
+
   .button{
+    border:2px solid gainsboro;
     border-radius: 20px;
     height:40px;
     width:150px;
+    text-align: center;
+    
+  
+
 
   }
+  .addcartbutton{
+    background: greenyellow;
+    color: white;
+    border-radius: 20px;
+    border:1px solid gainsboro;
+    height:40px;
+    width:150px;
+  }
+  text {
+      font-size: 24px;
+    }
+    .moreText {
+      display: none;
+    }
+    .read-more-btn {
+      padding: 15px 60px;
+      background-color: rgb(149, 170, 197);
+      color: rgb(53, 49, 49);
+      border: none;
+      outline: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .text.show-more .moreText {
+      display: inline;
+    }
+    .text.show-more .dots {
+      display: none;
+    }
+    
