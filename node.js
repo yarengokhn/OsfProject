@@ -1,4 +1,4 @@
-const dropdowns =document.querySelectorAll('.dropdown');
+const dropdowns =document.querySelectorAll('.dropdown-content');
 dropdowns.forEach(dropdown => {
    const select =dropdown.querySelector('.select')
    const caret =dropdown.querySelector('.caret')
@@ -16,7 +16,18 @@ function myFunction() {
     }
   }
 
+//cookie
 
+$(".close").on("click", function () {
+  $(".cookie").css("display", "none");
+  $(".fadefade").fadeOut();
+});
+
+$(".acceptButton").on("click", function () {
+  $(".cookie").css("display", "none");
+  $(".fadefade").fadeOut();
+  localStorage.setItem("cookie", "done");
+})
 
   let slideIndex = 1;
 showSlides(slideIndex);
@@ -101,3 +112,79 @@ function incrementButtonHeart(){
 
   document.getElementById("incrementHeart").innerHTML=value;
 }
+
+var loadMore = function (key) {
+  $.ajax({
+      url: "./js/newCards.json", success: function (response) {
+          if (response[key] !== "fail" && response[key] !== undefined) {
+              loadMoreSuccess(response, key);
+          } else {
+              alert("Cannot load more.");
+          }
+
+      }, failure: function () {
+          alert("Cannot load more.");
+      }
+  });
+}
+var loadCounter = 0;
+var loadKeys = {
+    "1": "firstCall",
+    "2": "secondCall",
+    "3": "thirdCall"
+}
+var loadMoreSuccess = function (response, key) {
+  var fourCardHtml = "";
+  response[key].forEach(function (elem, index) {
+      
+      var cardHtml = '<div class="col-lg-3 mb-3">' +
+          ' <div class="card w-100 h-100">' +
+          '<div class="img">'+
+          '<img src="' + elem.img + '"alt="" class="image card-img-top" height="250px" width="100px">' +
+          '<div class="overlay w-100 h-100">'+
+          '<button class="btn btn-circle btn-circle-xl mb-2"  onclick="incrementButton()"><i class="fa fa-plus add"></i></button>'+
+          '<button class="btn btn-circle btn-circle-xl mb-2" onclick="incrementButtonHeart()"><i class="fa fa-heart heart" ></i></button>'+
+        '</div>'+
+          '<div class="card-body">' +
+          '<h5 class="card-title">' + elem.cardText + '</h5>' +
+          '<h6 class="card-subtitle mb-2 text-muted">>$ ' + elem.price + '</h6>' +
+          '</div>' +
+          '</div>' +
+          '</div>' 
+
+      fourCardHtml = fourCardHtml + cardHtml;
+      if (index === (response[key].length - 1)) {
+          $(".to-add-cards").append(fourCardHtml);
+          $(".osf-cards").addClass("pb-4");
+      }
+  });
+}
+
+$(".load-more").on("click", function () {
+  loadMore(loadKeys[loadCounter + 1]);
+  loadCounter = loadCounter + 1;
+});
+
+    //login
+
+    $(".loginAccept").on("click", function () {
+      var str = document.getElementById("myInput").value;
+      if (str.match(/[a-z]/g) && str.match(
+          /[A-Z]/g) && str.match(
+              /[0-9]/g) && str.match(
+                  /[^a-zA-Z\d]/g) && str.length >= 6)
+          console.log("Correct password type");
+
+      else
+          alert("Enter the correct password type");
+  });
+
+  function showPassword() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+

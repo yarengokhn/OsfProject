@@ -5,18 +5,20 @@ body{
   flex-direction: column;
 }
 .navbar{
- 
+ position:fixed;
   height: 60px;
   width:100%;
+  margin:0;
   background-color: white;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
 }
 .main{
   height:40%;
-  width:60%;
+  width:70%;
   background-color: white;
-  padding-left:230px;
+  padding-left:150px;
   padding-top:50px;
   
 }
@@ -93,12 +95,13 @@ margin:0;
 
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
-  display: none;
+  display: block;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  cursor:pointer;
   
 }
 
@@ -162,7 +165,83 @@ margin:0;
     text-align: left;
   }
 }
+/* cookie*/
 
+.cookie {
+  top: 45%;
+  position: fixed;
+  left: 5%;
+  border-radius: 5px;
+  display: none;
+  height: auto;
+  z-index: 5;
+  width: 90%;
+  background-color: #ffffff;
+  margin: 0 auto; }
+
+.mb-100px {
+  margin-bottom: 100px; }
+
+.ml-200px {
+  margin-left: 200px; }
+
+.ml-300px {
+  margin-left: 300px; }
+
+.cookie-title {
+  white-space: nowrap;
+  padding-top: 28px;
+  color: #84bc22;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 24px;
+  margin-bottom: 34px; }
+
+.cookie-link{
+  color: #84bc22; }
+
+.cookie-link:hover {
+  color: #ace34d; }
+
+.cookie-text {
+  color: #45413e;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px; }
+
+.accept {
+  width: 100%;
+  position: relative;
+  text-align: right;
+  padding-bottom: 10px;
+  padding-right: 10px; }
+
+.acceptButton {
+  border: 2px solid #e8e2d6;
+  width: 148px !important;
+  height: 37px;
+  background-color: #84bc22;
+  border-radius: 30px;
+  color: white;
+  justify-content: center;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative; }
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px; }
+  .fadefade {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.8;
+    z-index: 5; }
   
 .container h2{
   color: white;
@@ -174,6 +253,13 @@ margin:0;
   border:1px solid white;
   border-radius: 15px;
   width:auto;
+
+
+}
+
+.carousel slide{
+  width: 20%;
+  height:20%;
 
 
 }
@@ -431,6 +517,7 @@ a{
   color:white;
   border-radius: 10px;
   width:200px;
+  display: flex;
   justify-content: center;
 
 
@@ -708,3 +795,202 @@ background-color: rgba(26,188,156,0.7);
 #main-content h1 { font-size: 28px;
 }
 }
+
+
+
+
+
+.modal-content {
+  position: absolute;
+  height: 467px;
+  background-color: #ffffff;
+  margin-top: 42%; }
+
+.modal-title {
+  color: #45413e;
+  font-family: "Lato ";
+  font-size: 30px;
+  font-weight: 900;
+  margin-top: 50px;
+  margin-bottom: 30px; }
+
+.modal-body {
+  flex: 0; }
+  #signin {
+    color:rgb(69, 70, 67) ;
+    
+
+  }
+  #form-submit{
+    background:rgb(137, 204, 37) ;
+    border:none;
+    border-radius: 20px;
+    color:white;
+   width:200px;
+   
+    text-transform: uppercase;
+    cursor:pointer;
+  
+    
+
+
+
+}
+.form-control validate{
+  border:2px solid rgb(189, 182, 182);
+  border-radius: 20px;
+  padding:12px 15px;
+  margin:8px 0;
+  width:100%;
+  font-family: inherit;
+ 
+  font-size: inherit;
+
+}
+#text{
+  color:rgb(137, 204, 37) ;
+  text-align: center;
+  padding-top: 20px;
+}
+#text1{
+  color:rgb(137, 204, 37) ;
+  text-align: right;
+}
+
+.summer-banner {
+  position: relative; }
+
+.summer-text {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  color: white;
+  font-size: 100px;
+  font-family: "Lato";
+  font-weight: 900; }
+
+.summer-text2 {
+  position: absolute;
+  font-family: "Lato";
+  font-size: 24px;
+  color: white;
+  top: 210px;
+  left: 85px;
+  text-align: center;
+  font-weight: 400; }
+
+.facebook-text {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 40px;
+  font-weight: 400; }
+
+.facebook-text2 {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 5px;
+  font-weight: 400; }
+
+.sale-button {
+  margin-left: 50px;
+  margin-top: 22px;
+  font-size: 14px;
+  font-weight: 400;
+  width: 144px;
+  height: 40px;
+  border: 2px solid #3a5b96;
+  border-radius: 20px;
+  background: none;
+  color: #3a5b96;
+  text-transform: uppercase;
+  text-align: center; }
+
+.sale-button:hover {
+  background-color: #3a5b96; }
+
+.follow-normal > div:last-child {
+  display: none; }
+
+.sale-button:hover span {
+  color: #fff; }
+
+.follow-normal:hover > div:first-child {
+  display: none; }
+
+.follow-normal:hover > div:last-child {
+  display: block;
+  background-color: #3a5b96; }
+
+button.sale-button.follow-normal > div > img {
+  margin-right: 2px; }
+
+button.sale-button.follow-normal > div > span {
+  margin-left: 2px; }
+.firstpart{
+  display: flex;
+  text-align: center;
+  
+}
+
+.load-more {
+  width: 270px;
+  height: 45px;
+  border: 2px solid #e8e2d6;
+  background-color: #1e1d22;
+  border-radius: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 22px; }
+
+.load-more:hover {
+  background-color: #84bc22; }
+
+.load-text {
+  margin-left: 25px; }
+
+
+.benefitcontainer{
+  background-color: rgb(94, 91, 85);
+}
+
+
+.benefits-text{
+  margin-top: 30px;
+  color:rgb(172, 170, 153);
+  line-height: 20px;
+  width: 100%;
+  height:100%;
+  padding: 2px;
+ 
+
+}
+.col-sm{
+  display:flex;
+
+}
+#rowbenefit{
+  background-color: rgb(94, 91, 85);
+ height:250px;
+
+}
+#benefitimg{
+  margin-top: 30px;
+  height:50px;
+  width:50px;
+ 
+
+}
+.benefits {
+  width: 57px;
+  margin-top: 5px;
+padding-left: 62px;
+  height: 15px;
+  color: #ffffff;
+  font-family: lato;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase; }
