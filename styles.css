@@ -3,6 +3,9 @@ body{
   padding:0;
   display:flex;
   flex-direction: column;
+  overflow-x: hidden;
+  
+ 
 }
 .navbar{
  position:fixed;
@@ -994,3 +997,4 @@ padding-left: 62px;
   font-weight: 500;
   line-height: 24px;
   text-transform: uppercase; }
+/* category landing page */
