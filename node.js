@@ -113,57 +113,6 @@ function incrementButtonHeart(){
   document.getElementById("incrementHeart").innerHTML=value;
 }
 
-var loadMore = function (key) {
-  $.ajax({
-      url: "./js/newCards.json", success: function (response) {
-          if (response[key] !== "fail" && response[key] !== undefined) {
-              loadMoreSuccess(response, key);
-          } else {
-              alert("Cannot load more.");
-          }
-
-      }, failure: function () {
-          alert("Cannot load more.");
-      }
-  });
-}
-var loadCounter = 0;
-var loadKeys = {
-    "1": "firstCall",
-    "2": "secondCall",
-    "3": "thirdCall"
-}
-var loadMoreSuccess = function (response, key) {
-  var fourCardHtml = "";
-  response[key].forEach(function (elem, index) {
-      
-      var cardHtml = '<div class="col-lg-3 mb-3">' +
-          ' <div class="card w-100 h-100">' +
-          '<div class="img">'+
-          '<img src="' + elem.img + '"alt="" class="image card-img-top" height="250px" width="100px">' +
-          '<div class="overlay w-100 h-100">'+
-          '<button class="btn btn-circle btn-circle-xl mb-2"  onclick="incrementButton()"><i class="fa fa-plus add"></i></button>'+
-          '<button class="btn btn-circle btn-circle-xl mb-2" onclick="incrementButtonHeart()"><i class="fa fa-heart heart" ></i></button>'+
-        '</div>'+
-          '<div class="card-body">' +
-          '<h5 class="card-title">' + elem.cardText + '</h5>' +
-          '<h6 class="card-subtitle mb-2 text-muted">>$ ' + elem.price + '</h6>' +
-          '</div>' +
-          '</div>' +
-          '</div>' 
-
-      fourCardHtml = fourCardHtml + cardHtml;
-      if (index === (response[key].length - 1)) {
-          $(".to-add-cards").append(fourCardHtml);
-          $(".osf-cards").addClass("pb-4");
-      }
-  });
-}
-
-$(".load-more").on("click", function () {
-  loadMore(loadKeys[loadCounter + 1]);
-  loadCounter = loadCounter + 1;
-});
 
     //login
 
@@ -188,3 +137,122 @@ $(".load-more").on("click", function () {
     }
   }
 
+  //loadmorebutton
+
+ 
+  fetch("books.json")
+  .then(response => response.json())
+  .then(books => {
+    localStorage.setItem("books", JSON.stringify(books));
+  });
+  
+  let container = document.querySelector(".contentload");
+  let loadMoreButton = document.querySelector(".contentload button");
+  let loadItems = 4;
+  function loadData(){
+    let books = JSON.parse(localStorage.getItem("books"));
+    let currentDisplayedItems = document.querySelectorAll(".book").length;
+    
+    let out = "";
+    let counter = 0;
+    for(let book of books){
+      if(counter >= currentDisplayedItems && counter < loadItems + currentDisplayedItems){
+        out += `
+          
+        <div class="col-sm-3">
+        <div class="thumb-wrapper">
+          <div class="img-box">
+          <img src="${book.image}"   class="image card-img-top" height="250px" width="100px">							
+          </div>					
+            <div class="card-body">
+              <h5 class="card-title">
+              ${book.title}
+              </h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+              ${book.price}
+              </h6>
+          </div>						
+        </div>
+  
+  
+  
+  
+              
+        `;
+      }
+      counter++;
+    }
+
+  
+    let div = document.createElement("div");
+    container.insertBefore(div, loadMoreButton);
+    div.innerHTML = out;	
+    div.style.opacity = 0;
+  
+    if(document.querySelectorAll(".book").length == books.length){
+      loadMoreButton.style.display = "none";
+    }
+    fadeIn(div);
+  }
+  function fadeIn(div){
+    let opacity = 0;
+    let interval = setInterval(function(){
+      if (opacity <= 1) {
+        opacity = opacity + 0.1;
+        div.style.opacity = opacity;
+      }else{
+        clearInterval(interval);
+      } 
+    }, 30);
+  }
+  
+  const menu = document.querySelector(".menu");
+const menuMain = menu.querySelector(".menu-main");
+const goBack = menu.querySelector(".go-back");
+const menuTrigger = document.querySelector(".mobile-menu-trigger");
+const closeMenu = menu.querySelector(".mobile-menu-close");
+let subMenu;
+menuMain.addEventListener("click", (e) =>{
+  if(!menu.classList.contains("active")){
+    return;
+  }
+  if(e.target.closest(".menu-item-has-children")){
+     const hasChildren = e.target.closest(".menu-item-has-children");
+     showSubMenu(hasChildren);
+  }
+});
+goBack.addEventListener("click",() =>{
+   hideSubMenu();
+})
+menuTrigger.addEventListener("click",() =>{
+   toggleMenu();
+})
+closeMenu.addEventListener("click",() =>{
+   toggleMenu();
+})
+document.querySelector(".menu-overlay").addEventListener("click",() =>{
+  toggleMenu();
+})
+function toggleMenu(){
+  menu.classList.toggle("active");
+  document.querySelector(".menu-overlay").classList.toggle("active");
+}
+function showSubMenu(hasChildren){
+   subMenu = hasChildren.querySelector(".sub-menu");
+   subMenu.classList.add("active");
+   subMenu.style.animation = "slideLeft 0.5s ease forwards";
+   const menuTitle = hasChildren.querySelector("i").parentNode.childNodes[0].textContent;
+   menu.querySelector(".current-menu-title").innerHTML=menuTitle;
+   menu.querySelector(".mobile-menu-head").classList.add("active");
+}
+
+function  hideSubMenu(){  
+   subMenu.style.animation = "slideRight 0.5s ease forwards";
+   setTimeout(() =>{
+      subMenu.classList.remove("active");	
+   },300); 
+   menu.querySelector(".current-menu-title").innerHTML="";
+   menu.querySelector(".mobile-menu-head").classList.remove("active");
+}
+
+ 
