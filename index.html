@@ -20,11 +20,15 @@
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+    .row4 div{
+        display:flex;
+    }
+</style>
+
 
    
 
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
 </head>
 <body>
@@ -32,7 +36,7 @@
    
     <header class="header">
         <div class="container">
-            <div class="row v-center">
+            <div class="row v-center" >
                 <div class="header-item item-left">
                     <div class="logo">
                         <a href="./index.html"><img src="Logo.png"></a>
@@ -245,8 +249,9 @@
 
 
 <main>
+    
     <div class="main">
-        <div class="firstpart">
+        <div class="firstpart" >
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -261,7 +266,7 @@
                     <div class="carousel-caption text-left">
               <h2>Control and manage any device with cloud solutions</h2>
               <p>Improve business performance and user experience with the right mix of IoT technology and processes</p>
-              <button><a href="#"><h5>VIEW MORE</h5></a></button>
+              <button><a href="./category.html"><h5>VIEW MORE</h5></a></button>
             </div>
             </div>
             </div>
@@ -273,7 +278,7 @@
                     <div class="carousel-caption text-center">
               <h2>Control and manage any device with cloud solutions</h2>
               <p>Improve business performance and user experience with the right mix of IoT technology and processes</p>
-              <button><a href="#"><h5>VIEW MORE</h5></a></button>
+              <button><a href="./category.html"><h5>VIEW MORE</h5></a></button>
             </div>
             </div>
             </div>
@@ -285,7 +290,7 @@
                     <div class="carousel-caption text-right">
               <h2>Control and manage any device with cloud solutions</h2>
               <p>Improve business performance and user experience with the right mix of IoT technology and processes</p>
-              <button><a href="#"><h5>VIEW  MORE</h5></a></button>
+              <button><a href=./category.html"><h5>VIEW  MORE</h5></a></button>
             </div>
             </div>
             </div>
@@ -301,7 +306,9 @@
         </button>
       </div>
       
-      <div class="slider-right">
+      
+    </div>
+    <div class="slider-right">
         <div class="summer-banner">
             <img src="summer.png" alt="">
             <span class="summer-text">55%</span>
@@ -331,7 +338,6 @@
         </button>
     </div>
     </div>
-    </div>
 
  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
@@ -347,13 +353,13 @@
 
 <!-- Product Tile -->
 
-<section class="gallery">
+<section class="gallery" >
 <div class="items">
     
    <h4 id="text"> Popular Items   </h4>
 </div>
-  <div class="container">
-      <div class="row">
+  <div class="container" >
+      <div class="row" id="product">
           <div class="col-lg-3 mb-3 " >
               <div class="card w-100 h-100">
                   <div class="img">
@@ -515,11 +521,12 @@
          
   </div>
   </div>
-  <div class="contentload">
+  <div class="content">
+  <div class="row4">
 		
-    <button onclick="loadData()" class="load-more-button" ><span>&#10093;</span> </button>
+    <button onclick="loadData()" class="load-more-button" ><span>LOAD MORE</span> </button>
 
-
+  </div>
 
 
 <!-- content displaye from the javascript file -->
@@ -528,7 +535,8 @@
 
 
 
-<script src="script.js"></script> <!-- Link to the javascript file -->
+
+
 <script>
 loadInitialItems();
 </script>
@@ -540,7 +548,7 @@ loadInitialItems();
 
 <!-- Featured Products -->
 <div class="container-xl">
-	<div class="row">
+	<div class="row" id="product">
 		<div class="col-md-12">
 			<h2 id="string">Featured <b>Products</b> </h2>
             
@@ -554,9 +562,9 @@ loadInitialItems();
 				<li data-target="#myCarousel" data-slide-to="2"></li>
 			</ol>   
 			<!-- Wrapper for carousel items -->
-			<div class="carousel-inner">
+			<div class="carousel-inner" >
 				<div class="item carousel-item active">
-					<div class="row">
+					<div class="row" id="product">
 						<div class="col-sm-3 ">
 							<div class="thumb-wrapper">
 								
@@ -635,7 +643,7 @@ loadInitialItems();
 					</div>
 				</div>
 				<div class="item carousel-item">
-					<div class="row">
+					<div class="row"id="product">
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								
@@ -715,7 +723,7 @@ loadInitialItems();
 					</div>
 				</div>
                 <div class="item carousel-item">
-					<div class="row">
+					<div class="row"id="product">
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								

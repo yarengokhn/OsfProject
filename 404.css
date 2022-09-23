@@ -1,14 +1,17 @@
 
 #main{
-    margin-left: 15%;
-    margin-top: 8%;
+    margin-left: 12px;
+    margin-top:15px;
     border: 1px solid rgb(219, 207, 207);
     padding: 10px;
     box-shadow: 3px 5px #d6d5d5;
     justify-content: center;
+	
+
   }
 #main-0{
     width:60%;
+	
 }
 
 #main-0 h1{
