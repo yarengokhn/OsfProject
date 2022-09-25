@@ -266,7 +266,7 @@ a{
 
 }
 
-  
+  /*Product tile*/
 
 .card{
   position: absolute;
@@ -338,7 +338,7 @@ a{
 
 
 
-/*Product tile*/
+
 .items {
   color:white;
   text-align: center;
@@ -826,6 +826,8 @@ button.sale-button.follow-normal > div > span {
   margin-left: 25px; }
 
 
+
+  /*benefit */
 .benefitcontainer{
   background-color: rgb(94, 91, 85);
 }
