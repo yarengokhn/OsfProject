@@ -13,20 +13,21 @@
 </head>
 
 <body>
+    <script src="node.js"></script>
    
-    <header class="header">
+    <header class="header" id="head">
         <div class="container">
             <div class="row v-center" >
                 <div class="header-item item-left">
                     <div class="logo">
                         <a href="./index.html"><img src="img/Logo.png"></a>
-                        <a href="./index.html">
-                            <span class="osf-text1">OSF </span></a>
+                        <div class="textlogo">
+                            <a href="./index.html">
+                                <span class="osf-text1">OSF </span></a>
                             <a href="./index.html">
                                 <span class="osf-text">Academy</span>
                             </a>
-                            
-                        
+                            </div>
                         
                     </div>
                    
@@ -55,8 +56,8 @@
                                             <li><a href="./404.html">Books</a></li>
                                             <li><a href="./404.html">Drink</a></li>
                                             <li><a href="./404.html">Electronics</a></li>
-                                             <li><a href=./404.html">Flowers & Plants</a></li>
-                                             <li><a href=./404.html">Food</a></li>
+                                             <li><a href="./404.html">Flowers & Plants</a></li>
+                                             <li><a href="./404.html">Food</a></li>
                                              
                                         </ul>
                                    
@@ -109,7 +110,7 @@
                                     </ul>
                                 </div>
                                 <div class="list-item">
-                                   <img src="img/home.png">
+                                   <img src="home.png">
                                 </div>
                                  
                                 </div>
@@ -168,6 +169,8 @@
     </header>
     <!-- header end -->
 
+    
+
         <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -190,7 +193,7 @@
                                         for="defaultForm-pass">Password</label>
                                     <br>
                                     <input type="password" id="myInput" class="form-control validate">
-                                    <img src="img/eye.png"
+                                    <img src="./img/eye.png"
                                         alt="" type="checkbox" class="showPassword pass-img">
                                 </div>
                                 <div class="d-flex justify-content-center">
@@ -212,7 +215,7 @@
             
         <ol class="breadcrumb"id="backcolor">
             <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-            <li class="breadcrumb-item"><a href="./clp.html">OSF Theme</a></li>
+            <li class="breadcrumb-item"><a href="./category.html">OSF Theme</a></li>
             <li class="breadcrumb-item active" aria-current="page">Ruffle Front V-Neck Cardigan</li>
         </ol>
     </nav>
@@ -241,12 +244,12 @@
                                     class="mini-pdp-image"></a>
                         </div>
                         <div class="col-xl-12 col-sm-6 col-md-3 col-lg-2">
-                            <a href="./img/pic3.jpg" target="model-image-main"><img src="./img/pic3.jpg"
+                            <a href="./img/p3.jpg" target="model-image-main"><img src="./img/p3.jpg"
                                     alt="" class="mini-pdp-image"></a>
                         </div>
 
                         <div class="col-xl-12 col-sm-6 col-md-3  col-lg-2">
-                            <a href="./img/pic4.jpg" target="model-image-main"><img src="./img/pic4.jpg" alt=""
+                            <a href="./img/p4.jpg" target="model-image-main"><img src="./img/p4.jpg" alt=""
                                     class="mini-pdp-image"></a>
                         </div>
 
@@ -309,80 +312,77 @@
                     </div>
                 </div>
 
-
            
         
         
 
-            <div class="container">
-                <div class="row" id="tabrow">
-                    <div class="col-md-12">
-                        <div class="tab" role="tabpanel">
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">Description</a></li>
-                                <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">Additional Information</a></li>
-                                <li role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">Rewiews (3)</a></li>
-                            </ul>
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane fade in active" id="Section1">
-                                    
-                                    <p> Aenean commodo ligula eget dolor. Aenean
-                                        massa. Cum sociis natoque
-                                        penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                        <br> <br>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                        dolor. Aenean massa. 
-                                    </p>
+                <div class="container">
+                    <div class="row" id="tabrow">
+                        <div class="col-md-12">
+                            <div class="tab" role="tabpanel">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">Description</a></li>
+                                    <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">Additional Information</a></li>
+                                    <li role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">Rewiews (3)</a></li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+                                        
+                                        <p> Aenean commodo ligula eget dolor. Aenean
+                                            massa. Cum sociis natoque
+                                            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                            <br> <br>
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                            dolor. Aenean massa. 
+                                        </p>
+                                            <p>
+                                            Cum sociis natoque penatibus et magnis dis
+                                            parturient montes,
+                                            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                                            quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
+                                            nec, vulputate eget, arcu.</p>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="Section2">
+                                      
+                                        <p> Aenean commodo ligula eget dolor. Aenean
+                                            massa. Cum sociis natoque
+                                            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                            <br> <br>
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                            dolor. Aenean massa. 
+                                        </p>
                                         <p>
-                                        Cum sociis natoque penatibus et magnis dis
-                                        parturient montes,
-                                        nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                                        quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
-                                        nec, vulputate eget, arcu.</p>
-                                </div>
-                                <div role="tabpanel" class="tab-pane fade" id="Section2">
-                                  
-                                    <p> Aenean commodo ligula eget dolor. Aenean
-                                        massa. Cum sociis natoque
-                                        penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                        <br> <br>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                        dolor. Aenean massa. 
-                                    </p>
-                                    <p>
-                                        Cum sociis natoque penatibus et magnis dis
-                                        parturient montes,
-                                        nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                                        quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
-                                        nec, vulputate eget, arcu.</p>
-                                </div>
-                                <div role="tabpanel" class="tab-pane fade" id="Section3">
-                                    
-                                    <p> Aenean commodo ligula eget dolor. Aenean
-                                        massa. Cum sociis natoque
-                                        penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                        <br> <br>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                        dolor. Aenean massa. 
-                                    </p>
-                                    <p>
-                                        Cum sociis natoque penatibus et magnis dis
-                                        parturient montes,
-                                        nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                                        quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
-                                        nec, vulputate eget, arcu.</p>
+                                            Cum sociis natoque penatibus et magnis dis
+                                            parturient montes,
+                                            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                                            quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
+                                            nec, vulputate eget, arcu.</p>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="Section3">
+                                        
+                                        <p> Aenean commodo ligula eget dolor. Aenean
+                                            massa. Cum sociis natoque
+                                            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                            <br> <br>
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                            dolor. Aenean massa. 
+                                        </p>
+                                        <p>
+                                            Cum sociis natoque penatibus et magnis dis
+                                            parturient montes,
+                                            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                                            quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
+                                            nec, vulputate eget, arcu.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
-
-
+            </div>
 
                 <div class="popular-accurate" id="backcolor">
                     <span></span>
@@ -393,7 +393,7 @@
                         <div class="col-lg-3 mb-3 " id="productpagepro" >
                             <div class="card w-85 h-80">
                                 <div class="img">
-                                    <img src="img/product1.png" alt="" class="image card-img-top" height="250px" width="100px">
+                                    <img src="cat1.png" alt="" class="image card-img-top" height="250px" width="100px">
                                    
               
                                 </div>
@@ -413,7 +413,7 @@
                         <div class="col-lg-3 mb-3"  id="productpagepro" >
                             <div class="card w-85 h-80"  >
                                 <div class="img">
-                                    <img src="img/product2.png" alt="" class="image card-img-top" height="250px" width="100px">
+                                    <img src="cat2.png" alt="" class="image card-img-top" height="250px" width="100px">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">
@@ -434,7 +434,7 @@
                         <div class="col-lg-3 mb-3" id="productpagepro" >
                             <div class="card w-85 h-80"  >
                                 <div class="img">
-                                    <img src="img/product3.png" alt="" class="image card-img-top" height="250px" width="100px">
+                                    <img src="cat3.png" alt="" class="image card-img-top" height="250px" width="100px">
                                     <div class="overlay w-90 h-90">
                                       <button class="btn btn-circle btn-circle-xl mb-2"  onclick="incrementButton()"><i class="fa fa-plus add"></i></button>
                                       <button class="btn btn-circle btn-circle-xl mb-2" onclick="incrementButtonHeart()"><i class="fa fa-heart heart" ></i></button>
@@ -456,7 +456,7 @@
                         <div class="col-lg-3 mb-3" id="productpagepro" >
                             <div class="card w-85 h-80"  >
                                 <div class="img">
-                                    <img src="img/product4.png" alt="" class="image card-img-top" height="260px" width="100px">
+                                    <img src="cat4.png" alt="" class="image card-img-top" height="260px" width="100px">
                                     
               
                                 </div>
@@ -485,34 +485,33 @@
 
 
 
-                <div class="benefitcontainer">
-                    <div class="row  w-100 h-100" id="rowbenefit">
-                        <div class="col-md-4">
-                            <img id="benefitimg" src="img/focus.png">
-                            <p class="benefits header-mini">FOCUS</p>
-                            <p class="benefits-text">
-                                Our unwavering focus on superior <br>
-                                service delivery andbuilding next<br>
-                                generation competencies</p>
-                        </div>
-                        <div class="col-md-4">
-                            <img id="benefitimg" src="img/method.png">
-                            <p class="benefits header-mini">METHOD</p>
-                            <p class="benefits-text">A standardized methodology designed<br>
-                                to deliver measurable business results<br>
-                                and predictable costs</p>
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <img id="benefitimg" src="img/know.png">
-                            <p class="benefits header-mini ">KNOWLEDGE</p>
-                            <p class="benefits-text">A highly skilled, proactive workforce that<br>
-                                reliably improves each client’s ROI while<br>
-                                mitigating their business risk</p>
-                        </div>
-                    </div>
-        
-                </div>
+        <div class="benefitcontainer">
+            <div class="row  w-100 h-100" id="rowbenefit" >
+              <div class="col-md-4" id="benefitcont">
+                <img id="benefitimg" src="focus.png" >
+                <p class="benefits header-mini">FOCUS</p>
+                <p class="benefits-text">
+                    Our unwavering focus on superior <br>
+                    service delivery andbuilding next<br>
+                     generation competencies</p>
+              </div>
+              <div class="col-md-4">
+                <img id="benefitimg" src="method.png" >
+                    <p class="benefits header-mini">METHOD</p>
+                <p class="benefits-text">A standardized methodology designed<br>
+                     to deliver measurable business results<br>
+                     and predictable costs</p>
+                </p>
+              </div>
+              <div class="col-md-4">
+                <img id="benefitimg" src="know.png" >
+                <p class="benefits header-mini ">KNOWLEDGE</p>
+                    <p class="benefits-text">A highly skilled, proactive workforce that<br>
+                         reliably improves each client’s ROI while<br> 
+                         mitigating their business risk</p>
+              </div>
+            </div>
+   
 </div>
 
 
@@ -606,7 +605,7 @@
    
 
     <script src="Jquery.js"></script>
-    <script src="bootstrap.js"></script>
+    <script src="bootsrap.js"></script>
     <script src="general.js"></script>
 
 </body>

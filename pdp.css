@@ -1414,11 +1414,9 @@ a{
  
 
 }
-div.col-sm{
-  display: flex;
-}
-.benefitcontainer{
-  display: flex;
+.col-sm{
+  display:flex;
+
 }
 #rowbenefit{
   background-color: rgb(94, 91, 85);
@@ -1521,6 +1519,7 @@ text-decoration: none;
 .header{
 
 display: block;
+margin-top:0px;
 width: 100%;
 position: fixed;
 z-index: 99;
@@ -1530,6 +1529,27 @@ background-color: white;
 .header .item-left{
 flex:0 0 17%;
 }
+.logo1 {
+  width: 63px;
+  height: 65px; }
+
+.osf-text1 {
+  width: 73px;
+  height: 25px;
+  color: #011847;
+  font-size: 32px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 6.33px;
+  margin-left: 7px; }
+
+  .osf-text {
+  width: 74px;
+  height: 17px;
+  color: #84bc22;
+  font-size: 18px;
+  font-weight: 400; 
+margin-left:7px;}
 
 .header .logo a{
 font-size: 20px;
@@ -2610,4 +2630,15 @@ padding-left: 62px;
 #rowbenefit
 {
   display: flex;
+}
+
+
+
+
+.breadcrumb{
+  position: relative;
+  display: flex;
+  justify-content: center;
+ 
+
 }
