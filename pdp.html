@@ -393,7 +393,7 @@
                         <div class="col-lg-3 mb-3 " id="productpagepro" >
                             <div class="card w-85 h-80">
                                 <div class="img">
-                                    <img src="cat1.png" alt="" class="image card-img-top" height="250px" width="100px">
+                                    <img src="img/cat1.png" alt="" class="image card-img-top" height="250px" width="100px">
                                    
               
                                 </div>
@@ -413,7 +413,7 @@
                         <div class="col-lg-3 mb-3"  id="productpagepro" >
                             <div class="card w-85 h-80"  >
                                 <div class="img">
-                                    <img src="cat2.png" alt="" class="image card-img-top" height="250px" width="100px">
+                                    <img src="img/cat2.png" alt="" class="image card-img-top" height="250px" width="100px">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">
@@ -434,7 +434,7 @@
                         <div class="col-lg-3 mb-3" id="productpagepro" >
                             <div class="card w-85 h-80"  >
                                 <div class="img">
-                                    <img src="cat3.png" alt="" class="image card-img-top" height="250px" width="100px">
+                                    <img src="img/cat3.png" alt="" class="image card-img-top" height="250px" width="100px">
                                     <div class="overlay w-90 h-90">
                                       <button class="btn btn-circle btn-circle-xl mb-2"  onclick="incrementButton()"><i class="fa fa-plus add"></i></button>
                                       <button class="btn btn-circle btn-circle-xl mb-2" onclick="incrementButtonHeart()"><i class="fa fa-heart heart" ></i></button>
@@ -456,7 +456,7 @@
                         <div class="col-lg-3 mb-3" id="productpagepro" >
                             <div class="card w-85 h-80"  >
                                 <div class="img">
-                                    <img src="cat4.png" alt="" class="image card-img-top" height="260px" width="100px">
+                                    <img src="img/cat4.png" alt="" class="image card-img-top" height="260px" width="100px">
                                     
               
                                 </div>
@@ -488,7 +488,7 @@
         <div class="benefitcontainer">
             <div class="row  w-100 h-100" id="rowbenefit" >
               <div class="col-md-4" id="benefitcont">
-                <img id="benefitimg" src="focus.png" >
+                <img id="benefitimg" src="img/focus.png" >
                 <p class="benefits header-mini">FOCUS</p>
                 <p class="benefits-text">
                     Our unwavering focus on superior <br>
@@ -496,7 +496,7 @@
                      generation competencies</p>
               </div>
               <div class="col-md-4">
-                <img id="benefitimg" src="method.png" >
+                <img id="benefitimg" src="img/method.png" >
                     <p class="benefits header-mini">METHOD</p>
                 <p class="benefits-text">A standardized methodology designed<br>
                      to deliver measurable business results<br>
@@ -504,7 +504,7 @@
                 </p>
               </div>
               <div class="col-md-4">
-                <img id="benefitimg" src="know.png" >
+                <img id="benefitimg" src="img/know.png" >
                 <p class="benefits header-mini ">KNOWLEDGE</p>
                     <p class="benefits-text">A highly skilled, proactive workforce that<br>
                          reliably improves each client’s ROI while<br> 
@@ -531,7 +531,17 @@
      
             <ul class="footer-right">
               <li>
-                  <p> &copy;Copyright 2019<br>All Right Reserved.</p>
+                <div id="copyright"></div>
+
+                <script>
+                  const paragraph = `
+                  <p>
+                    &copy;Copyright ${new Date().getFullYear()} <br>All Right Reserved.
+                  </p>
+                `;
+            
+                  document.getElementById('copyright').innerHTML = paragraph;
+                </script>
       
                         <p>CONTACT</p>
                         <p>Headquarters:<br>5600,Blvd.des Galeries,Bur 530 <br>Québec,Québec G2K 2H6</p>
