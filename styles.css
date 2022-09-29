@@ -54,8 +54,8 @@ div#login.col-nav-item{
 }
 
 .carousel slide{
-  width: 80%;
-  height:20%;
+  position: relative;
+ 
 
 
 }
@@ -1177,11 +1177,11 @@ display: none;
   height: 100%;
   overflow: hidden;
   transform: translate(-100%);
-  transition: all 0.5s ease;
+  transition: all 10s ease-out;
   z-index: 1099;
 }
 .header .menu.active{
-   transform: translate(0%);	
+   transform: translate(100%);	
 }
 .header .menu > ul > li{
   line-height: 1;
