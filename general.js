@@ -20,7 +20,7 @@ var checkForWhishCount = function () {
 
 var loadMore = function (key) {
     $.ajax({
-        url: "./js/newCards.json", success: function (response) {
+        url: "./books.json", success: function (response) {
             if (response[key] !== "fail" && response[key] !== undefined) {
                 loadMoreSuccess(response, key);
             } else {

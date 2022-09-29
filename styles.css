@@ -85,7 +85,7 @@ div#login.col-nav-item{
 }
 
 
-
+/*footer part*/
 footer{
   display:-webkit-flex;
   display: -moz-flex;
@@ -194,6 +194,8 @@ a{
 
 }
 
+
+
   /*Product tile*/
 
 .card{
@@ -206,8 +208,6 @@ a{
 
 
 }
-
-
 
 .overlay{
   transition: .5s ease;
@@ -222,12 +222,10 @@ a{
 
 .img:hover .image{
   opacity:0.2;
-  
 
 }
 .img:hover .overlay{
   opacity:1;
- 
 
 }
 .card:hover{
@@ -259,22 +257,11 @@ a{
 .add {
   color: #18f118; }
 
-
-
-
-
-
-
-
-
 .items {
   color:white;
   text-align: center;
   padding-top: 0;
   
-  
-  
-
 }
 #text{
   margin-top: 0;
@@ -325,7 +312,6 @@ a{
 
 
 }
-
 /* Icons style */
 #incrementHeart,#incrementText{
   border:2px solid greenyellow;
@@ -338,9 +324,6 @@ a{
   height:500px;
   width: 100%;
 }
-
-
-
 
 
 /* Featured Products part style */
@@ -835,7 +818,7 @@ padding-left: 62px;
   font-weight: 500;
   line-height: 24px;
   text-transform: uppercase; }
-/* category landing page */
+
 
 
 
@@ -1512,15 +1495,6 @@ height: 500px;
 
 
 /*Product*/
-#productdetails{
-  display:flex;
-  
-
-}
-.productimg{
-  display:flex;
-  margin-top:20px;
-}
 
 
 .icon-shape {
@@ -1539,74 +1513,6 @@ height: 500px;
 
 
 
-#productdetails .productimg{
-    width: 100%;
-    margin-right: 0px;
-
-   
-}
-
-.small-img-row{
- padding-left: 30px;
-    flex-basis:10%;
-    cursor: pointer;
-
-}
-
-.prodetail{
-     width: 500px;
-     padding:20px;
-     
-
-
-}
- .prodetail span{
-  line-height: 25px;
-
-
-}
-
-
-  .button{
-    border:2px solid gainsboro;
-    border-radius: 20px;
-    height:40px;
-    width:150px;
-    text-align: center;
-    
-  
-
-
-  }
-  .addcartbutton{
-    background: greenyellow;
-    color: white;
-    border-radius: 20px;
-    border:1px solid gainsboro;
-    height:40px;
-    width:150px;
-  }
-  text {
-      font-size: 24px;
-    }
-    .moreText {
-      display: none;
-    }
-    .read-more-btn {
-      padding: 15px 60px;
-      background-color: rgb(149, 170, 197);
-      color: rgb(53, 49, 49);
-      border: none;
-      outline: none;
-      font-size: 20px;
-      cursor: pointer;
-    }
-    .text.show-more .moreText {
-      display: inline;
-    }
-    .text.show-more .dots {
-      display: none;
-    }
 
     .row4 div{
       display: flex;
@@ -1726,3 +1632,5 @@ main{
 
 background-color:rgb(246, 243, 235);
 }
+
+
