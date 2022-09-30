@@ -11,10 +11,12 @@ body{
 .main{
   height:40%;
   width:100%;
+  overflow: hidden;
   background-color: white;
   padding-left:150px;
   padding-top:50px;
   display: flex;
+  overflow-x: hidden;
   
 }
 
@@ -319,10 +321,6 @@ a{
   color:#ddd;
   position:relative;
 
-}
-.staticpicture img{
-  height:500px;
-  width: 100%;
 }
 
 
@@ -751,6 +749,7 @@ button.sale-button.follow-normal > div > span {
   display: flex;
   text-align: center;
   width:1000px;
+  
   
 }
 
@@ -1370,11 +1369,11 @@ display: block;
 
 
 .filters{
-    width:70%;
+    width:100%;
     height:fit-content;
    
     justify-content: center;
-    margin-left: 10%;
+   
     padding-inline: 15px;
     justify-content: space-between;
     background-color: white;
@@ -1455,40 +1454,6 @@ display: block;
 /* product page */
 
 
-.product-small-img img{
-  height:92px;
-  margin:10px 0;
-  cursor:pointer;
-  display: block;
-  opacity:0.6;
-
-}
-.product-small-img img:hover{
-
-  opacity:1 ;
-}
-.product{
-  display: flex;
-  top:50%;
-  left:50%;
-  
-  transform:translate(-50%,-50%);
-  position: absolute;
-  background-color: #fff;
-}
-.img-container img{
-   
-height: 500px;
-
-}
-.product-small-img{
-  
-  float:left;
-}
-.img-container{
-  float: right;
-  padding:20px;
-}
 
 
 
@@ -1633,4 +1598,43 @@ main{
 background-color:rgb(246, 243, 235);
 }
 
+.staticpicture img{
+  height:500px;
+  width: 100%;
+}
+
+.osf-banner {
+  max-width: 1280px;
+  position: relative;
+  width: 100%; }
+  .osf-banner img{
+    height:500px;
+    width: 100%;
+  }
+
+.osf-banner-head {
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 401px;
+  height: 38px;
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 48px;
+  font-weight: 900;
+  white-space: nowrap; }
+
+.osf-banner-text {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-family: "Lato";
+  font-weight: 400;
+  max-width: 334px;
+  height: 28px;
+  font-size: 14px;
+  text-align: center; }
 
